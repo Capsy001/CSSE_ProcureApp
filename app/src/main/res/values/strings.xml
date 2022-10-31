@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ProcureApp</string>
+    <string name="signin">SIGN IN</string>
+    <string name="signup">SIGN UP</string>
+    <string name="slogan">Learnnnn</string>
+    <string name="password">PASSWORD</string>
+    <string name="Email">EMAIL</string>
+    <string name="Login">LOGIN</string>
+    <string name="retypepw">Re-Type Password</string>
+    <string name="name">Name</string>
+    <string name="teacher">Teacher</string>
+    <string name="student">Student</string>
+</resources>

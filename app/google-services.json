@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "270688586619",
+    "firebase_url": "https://csse-6b036-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "csse-6b036",
+    "storage_bucket": "csse-6b036.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270688586619:android:0c824e2c3005499659cbde",
+        "android_client_info": {
+          "package_name": "com.csse.procureapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270688586619-e3dlcit6ksc1tsa982j2rvmfe7p04fct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNmg2J62Z0RgOhekXgBX5JxXuLyUIlxpc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270688586619-e3dlcit6ksc1tsa982j2rvmfe7p04fct.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
