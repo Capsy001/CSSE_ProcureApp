@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="@color/logout_red"
+    android:onClick="logout"
     tools:context=".Dashboard">
 
     <Button
@@ -15,7 +16,14 @@
         android:layout_marginEnd="4dp"
         android:backgroundTint="@color/logout_red"
         android:focusable="false"
-        android:text="LOGOUT"
+        android:text="@string/logout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="409dp"
+        android:layout_height="549dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="53dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

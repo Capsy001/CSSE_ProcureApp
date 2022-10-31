@@ -32,8 +32,8 @@ public class Dashboard extends AppCompatActivity {
                 Log.d("TAG", "Logging out!");
                 Toast.makeText(Dashboard.this,"Logging Out!", Toast.LENGTH_SHORT).show();
                 //foward to login
-                Intent i = new Intent(getApplicationContext(), Login.class);
-                startActivity(i);
+                Intent intent = new Intent(getApplicationContext(), Login.class);
+                startActivity(intent);
             }
         });
 
