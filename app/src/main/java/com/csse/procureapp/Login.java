@@ -34,8 +34,10 @@ public class Login extends AppCompatActivity {
 
         if(fAuth.getCurrentUser() != null){
 
-            Intent intent1=new Intent(this, Dashboard.class);
-            startActivity(intent1);
+//            Intent intent1=new Intent(this, Dashboard.class);
+//            startActivity(intent1);
+
+            startActivity(new Intent(Login.this, UserDashboard.class));
 
             return;
 

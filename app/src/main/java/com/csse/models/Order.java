@@ -5,15 +5,35 @@ public class Order {
     private String id;
     private String item;
     private String status;
-    private Boolean delivered;
+    private String delivered;
     private String address; //delivery address
+    private String quantity;
+    private String uid;
 
-    public Order(String id, String item, String status, Boolean delivered, String address) {
+    public Order(String id, String item, String status, String delivered, String address, String quantity, String uid) {
         this.id = id;
         this.item = item;
         this.status = status;
         this.delivered = delivered;
         this.address = address;
+        this.quantity = quantity;
+        this.uid = uid;
+    }
+
+    public String getUid() {
+        return uid;
+    }
+
+    public void setUid(String uid) {
+        this.uid = uid;
+    }
+
+    public String getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(String quantity) {
+        this.quantity = quantity;
     }
 
     public String getId() {
@@ -40,11 +60,11 @@ public class Order {
         this.status = status;
     }
 
-    public Boolean getDelivered() {
+    public String getDelivered() {
         return delivered;
     }
 
-    public void setDelivered(Boolean delivered) {
+    public void setDelivered(String delivered) {
         this.delivered = delivered;
     }
 

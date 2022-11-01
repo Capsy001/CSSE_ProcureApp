@@ -19,7 +19,19 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_home">Profile</string>
+    <string name="menu_gallery">Add Order</string>
+    <string name="menu_slideshow">List Orders</string>
+    <string name="add_order">Add Order</string>
+    <string name="list_orders">List Orders</string>
+    <string name="logout2">Logout</string>
+    <string name="profile">Profile</string>
+    <string name="Procurement_Manager">Procurement Manager</string>
+    <string name="itemname">Item Name</string>
+    <string name="deliveryaddress">Delivery Address</string>
+    <string name="Quantity">Quantity</string>
+    <string name="date">Date</string>
+    <string name="addorder">Add Order</string>
+    <string name="expecteddate">Expected Date</string>
+    <string name="cancel">Cancel</string>
 </resources>
