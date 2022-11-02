@@ -5,7 +5,7 @@ public class SiteManager {
     private String name;
     private String email;
 
-    public SiteManager(String name, String email, String password) {
+    public SiteManager(String name, String email) {
         this.name = name;
         this.email = email;
 

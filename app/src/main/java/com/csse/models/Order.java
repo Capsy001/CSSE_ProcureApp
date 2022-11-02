@@ -9,8 +9,9 @@ public class Order {
     private String address; //delivery address
     private String quantity;
     private String uid;
+    private String expectedDate;
 
-    public Order(String id, String item, String status, String delivered, String address, String quantity, String uid) {
+    public Order(String id, String item, String status, String delivered, String address, String quantity, String uid, String expectedDate) {
         this.id = id;
         this.item = item;
         this.status = status;
@@ -18,6 +19,15 @@ public class Order {
         this.address = address;
         this.quantity = quantity;
         this.uid = uid;
+        this.expectedDate = expectedDate;
+    }
+
+    public String getExpectedDate() {
+        return expectedDate;
+    }
+
+    public void setExpectedDate(String expectedDate) {
+        this.expectedDate = expectedDate;
     }
 
     public String getUid() {

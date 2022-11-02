@@ -1,6 +1,7 @@
 package com.csse.procureapp.ui.gallery;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,6 +33,11 @@ import java.util.Map;
 
 public class OrderFragment extends Fragment {
 
+    EditText itemName;
+    EditText quantity;
+    EditText expectedDate;
+    EditText deliveryAdress;
+
     public static final String TAG="TAG";
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
@@ -50,16 +56,39 @@ private FragmentOrderBinding binding;
 
 
         ////
-        EditText itemName=root.findViewById(R.id.itemname);
-        EditText quantity=root.findViewById(R.id.quantity);
-        EditText expectedDate=root.findViewById(R.id.expecteddate);
-        EditText deliveryAdress=root.findViewById(R.id.deliveryaddress);
+        itemName=root.findViewById(R.id.itemname);
+        quantity=root.findViewById(R.id.quantity);
+        expectedDate=root.findViewById(R.id.expecteddate);
+        deliveryAdress=root.findViewById(R.id.deliveryaddress);
 
         Button addOrder=(Button)root.findViewById(R.id.addorder);
 
         addOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                if(TextUtils.isEmpty(itemName.getText().toString())){
+                    itemName.setError("This field cannot be empty!");
+                    return;
+
+                }
+                if(TextUtils.isEmpty(quantity.getText().toString())){
+                    quantity.setError("This field cannot be empty!");
+                    return;
+
+                }
+                if(TextUtils.isEmpty(expectedDate.getText().toString())){
+                    expectedDate.setError("This field cannot be empty!");
+                    return;
+
+                }
+                if(TextUtils.isEmpty(deliveryAdress.getText().toString())){
+                    deliveryAdress.setError("This field cannot be empty!");
+                    return;
+
+                }
+
+
 
                 //firebase Authentication initialize
                 fAuth=FirebaseAuth.getInstance();

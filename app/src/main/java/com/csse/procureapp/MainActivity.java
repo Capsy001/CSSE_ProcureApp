@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.csse.dbaccess.DBAccess;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -46,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void signUp(View view){
+
+        Toast.makeText(this, "Heyy", Toast.LENGTH_SHORT).show();
 
         Intent intent1=new Intent(this, SignUp.class);
         startActivity(intent1);

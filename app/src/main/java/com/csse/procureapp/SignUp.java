@@ -37,7 +37,6 @@ public class SignUp extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
 
 
-
         EditText name=findViewById(R.id.name_signup);
         EditText email=findViewById(R.id.email_signup);
         EditText password=findViewById(R.id.password_signup);
@@ -52,7 +51,7 @@ public class SignUp extends AppCompatActivity {
         Button signup=findViewById(R.id.signup_signup);
 
         if(fAuth.getCurrentUser() != null){
-            startActivity(new Intent(getApplicationContext(), Dashboard.class));
+            startActivity(new Intent(getApplicationContext(), UserDashboard.class));
             finish();
         }
 
@@ -114,7 +113,7 @@ public class SignUp extends AppCompatActivity {
                             }
                         });
 
-                        //foward to student dashboard
+                        //foward to dashboard
                         startActivity(new Intent(getApplicationContext(),Dashboard.class));
                     }else{
                         Toast.makeText(SignUp.this,"Error "+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
@@ -124,7 +123,6 @@ public class SignUp extends AppCompatActivity {
             });
 
         });
-
 
 
     }

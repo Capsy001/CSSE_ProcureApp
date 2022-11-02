@@ -34,4 +34,6 @@
     <string name="addorder">Add Order</string>
     <string name="expecteddate">Expected Date</string>
     <string name="cancel">Cancel</string>
+    <string name="delivered" >Delivered</string>
+    <string name="delete">Delete</string>
 </resources>

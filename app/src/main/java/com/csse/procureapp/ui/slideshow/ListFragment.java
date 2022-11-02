@@ -76,6 +76,7 @@ private FragmentListBinding binding;
 
                         //getting institutes
 
+                        String id=document.getId();
                         String itemName=document.get("itemName").toString();
                         String quantity=document.get("quantity").toString();
                         String status=document.get("status").toString();
@@ -84,7 +85,7 @@ private FragmentListBinding binding;
                         String deliveryAddress=document.get("deliveryAddress").toString();
                         String delivery=document.get("delivery").toString();
 
-                        Order newOrder=new Order("ID", itemName, status, delivery, deliveryAddress, quantity, uid);
+                        Order newOrder=new Order(id, itemName, status, delivery, deliveryAddress, quantity, uid, expectedDate);
                         arrayOfOrders.add(newOrder);
                         //add all object items to a list
 
